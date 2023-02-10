@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@900&display=swap" rel="stylesheet">
+    <title>Text Gradient Generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="gradient">
+            <h1>CSS Text Gradient Generator</h1>
+            <input type="text" id="text" name="text" placeholder="Enter your text">
+            <div class="box__color">
+                <label for="color__one">Color 1</label>
+                <input type="color" id="color__one" value="#1eeb7a">
+            </div>
+            <div class="box__color">
+                <label for="color__second">Color 2</label>
+                <input type="color" id="color__second" value="#1eebeb">
+            </div>
+            <div class="changeGradient">
+                <p>Orientation:</p>
+                <label for="horizontal">Horizontal</label>
+                <input name="radio" type="radio" value="linear-gradient(to right, " id="horizontal" checked>
+                <label for="vertical">Vertical</label>
+                <input name="radio" type="radio" value="linear-gradient(to bottom, " id="vertical">
+                <label for="radial">Radial</label>
+                <input name="radio" type="radio" value="radial-gradient(" id="radial">
+            <div class="box__degree">
+                <label for="degree">Set the Angle of a Linear Gradient:</label>
+                <input type="text" id="degree" name="degree">
+            </div>
+        </div>
+            <a href="#" class="random">Go at random!</a>
+        </div>
+
+        <div class="box__result">
+            <div class="window"><p class="window_text">TEXT EXAMPLE TEXT EXAMPLE TEXT EXAMPLE</p></div>
+            <div>
+                <p>Сopy to file</p>
+                <div class="cssResult">
+                    <p>color: transparent;</p>
+                    <p>-webkit-background-clip: text;</p>
+                    <p>background-clip: text;</p>
+                    <p class="cssResultP"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
